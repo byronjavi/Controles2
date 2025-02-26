@@ -79,5 +79,11 @@ namespace Controles
                 e.Handled = true;
             }
         }
+
+        private void nuevaPantalla(object sender, EventArgs e)
+        {
+            Persona nuevo = new Persona();
+            nuevo.ShowDialog();
+        }
     }
 }

@@ -39,6 +39,7 @@
             this.multiplicar = new System.Windows.Forms.CheckBox();
             this.dividir = new System.Windows.Forms.CheckBox();
             this.resto = new System.Windows.Forms.CheckBox();
+            this.btn_nueva_pantalla = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -150,11 +151,23 @@
             this.resto.Text = "%";
             this.resto.UseVisualStyleBackColor = true;
             // 
+            // btn_nueva_pantalla
+            // 
+            this.btn_nueva_pantalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nueva_pantalla.Location = new System.Drawing.Point(363, 261);
+            this.btn_nueva_pantalla.Name = "btn_nueva_pantalla";
+            this.btn_nueva_pantalla.Size = new System.Drawing.Size(181, 40);
+            this.btn_nueva_pantalla.TabIndex = 11;
+            this.btn_nueva_pantalla.Text = "Ir Otra pantalla";
+            this.btn_nueva_pantalla.UseVisualStyleBackColor = true;
+            this.btn_nueva_pantalla.Click += new System.EventHandler(this.nuevaPantalla);
+            // 
             // Controles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 452);
+            this.Controls.Add(this.btn_nueva_pantalla);
             this.Controls.Add(this.resto);
             this.Controls.Add(this.dividir);
             this.Controls.Add(this.multiplicar);
@@ -188,6 +201,7 @@
         private System.Windows.Forms.CheckBox multiplicar;
         private System.Windows.Forms.CheckBox dividir;
         private System.Windows.Forms.CheckBox resto;
+        private System.Windows.Forms.Button btn_nueva_pantalla;
     }
 }
 
